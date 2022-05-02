@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-import './AddEntryForm.css';
 
-const AddPost = (props) => {
 
-    const [name, setName] = useState(0);
+
+const CreatePost = (props) => {
+
+    const [name, setName] = useState('');
     const [post, setPost] = useState('');
 
-    function handleSubmit(event) {
+    function handleCreatePost(event) {
         event.preventDefault();
         let newPost = {
             name: name,
-            post: post
+            post: post,
         }
-        console.log(newPost)
-        props.addNewPost(newPost)
+        props.addNewPostProperty(newPost)
     }
 
 
     return ( 
-        <form onSubmit={handleSubmit} className='form-grid'>
+        <form onSubmit={handleCreatePost} className='form-grid'>
             <div className='form-group'>
                 <label>Name</label>
                 <input type='number' className='form-control' value={name} onChange={(event) => setName(event.target.value)} />
@@ -32,4 +32,4 @@ const AddPost = (props) => {
      );
 }
  
-export default AddPost;
+export default CreatePost;
