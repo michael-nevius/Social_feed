@@ -1,0 +1,25 @@
+.active-like {
+    background-color: rgb(2, 0, 128);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem;
+}
+.inactive {
+    border-radius: 10px;
+    border:none;
+    box-shadow: 2px 2px 6px;
+    margin: 1rem;
+}
+.active-dislike {
+    background-color: red;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem;
+}
+.post-buttons {
+    display: flex;
+    justify-content: right;
+
+}

@@ -5,6 +5,15 @@ table {
 
 tr {
     border: solid;
-    border-width: 2px 0;
+    border-width: 1px 0;
     border-top: 0;
+}
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.blue {
+    background-color: #3498db;
 }
