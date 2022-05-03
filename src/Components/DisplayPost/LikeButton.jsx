@@ -1,5 +1,10 @@
 import "./LikeButton.css";
 import React, { useState } from "react";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ThumbDownIcon from '@mui/icons-material/ThumbDown';
+
+
+
 const Buttons = (props) => {
   const [like, setLike] = useState("inactive");
   const [dislike, setDislike] = useState("inactive");
@@ -30,12 +35,11 @@ const Buttons = (props) => {
   return (
     <div className="post-buttons">
       <div>
-        <button className={like} onClick={() => likeClick()}>
-          Like
+        <button className={like} onClick={() => likeClick()}><ThumbUpIcon/>
         </button>
       </div>
       <div>
-        <button className={dislike} onClick={() => dislikeClick()}>Dislike</button>
+        <button className={dislike} onClick={() => dislikeClick()}><ThumbDownIcon/></button>
       </div>
     </div>
   );
