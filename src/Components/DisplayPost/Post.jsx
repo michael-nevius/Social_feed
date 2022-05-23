@@ -9,7 +9,7 @@ import './Post.css';
 
 const Post = (props) => {
 
-    const [posts, setPosts] = useState([{name: 'John Barnes', post: 'Today is the day I become Optimus Prime for real!'}])
+    const [posts, setPosts] = useState([{name: 'John Barnes', post: 'Today is the day I become Optimus Prime for real!' , date: '11-30-2025'}])
     function addNewPost(post){
         let tempPost = [...posts, post]
         

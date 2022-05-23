@@ -20,8 +20,11 @@ const DisplayPost = (props) => {
                         <br></br>
                         <div>
                             <td>{post.post}</td>
+
                             <Buttons />
                         </div>
+                            
+                        
                         <br></br>
                         <br></br>
                     </tr>

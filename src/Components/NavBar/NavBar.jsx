@@ -7,7 +7,7 @@ const NavBar = (props) => {
     return(
         <div className='navbar'>
             <div>
-                Social<span style={{"color":"orange"}}>Feed</span>
+                Social <span style={{"color":"orange"}}>Feed</span>
             </div>
         </div>
     );

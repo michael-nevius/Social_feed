@@ -6,12 +6,14 @@ const CreatePost = (props) => {
 
     const [name, setName] = useState('');
     const [post, setPost] = useState('');
+    
 
     function handleCreatePost(event) {
         event.preventDefault();
         let newPost = {
             name: name,
             post: post,
+           
         }
         props.addNewPostProperty(newPost)
     }
