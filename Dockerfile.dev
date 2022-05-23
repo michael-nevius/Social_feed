@@ -1,0 +1,18 @@
+FROM node:latest
+
+WORKDIR /app
+
+ENV PATH /app/node_modules/.bin:$PATH
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . ./
+
+EXPOSE 3000
+
+# This is optional
+# ENV CHOKIDAR_USEPOLLING=true
+
+CMD ["npm", "start"]
