@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  socialfeed:
+    container_name: socialfeed
+    image: mnevius/socialfeed-prod
+    ports:
+      - "80:80"
